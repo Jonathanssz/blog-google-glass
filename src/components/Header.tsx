@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import home from '../assets/images/home.png'
 import especificacoes from '../assets/images/especificacoes.png'
 import fotos from '../assets/images/fotos.png'
@@ -31,19 +32,19 @@ function Header(Prop: Props) {
                     <h1>Menu Principal</h1>
                     <ul>
                         <li onMouseOver={() => mudaFoto(home)} onMouseOut={() => mudaFoto(Prop.link)}>
-                            <a href="index.html">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li onMouseOver={() => mudaFoto(especificacoes)} onMouseOut={() => mudaFoto(Prop.link)}>
-                            <a href="specs.html">Especificações</a>
+                            <Link to="/especs">Especificações</Link>
                         </li>
                         <li onMouseOver={() => mudaFoto(fotos)} onMouseOut={() => mudaFoto(Prop.link)}>
-                            <a href="fotos.html">Fotos</a>
+                            <Link to="/fotos">Fotos</Link>
                         </li>
                         <li onMouseOver={() => mudaFoto(multimidia)} onMouseOut={() => mudaFoto(Prop.link)}>
-                            <a href="multimidia.html">Multimídia</a>
+                            <Link to="/multimidia">Multimídia</Link>
                         </li>
                         <li onMouseOver={() => mudaFoto(contato)} onMouseOut={() => mudaFoto(Prop.link)}>
-                            <a href="fale-conosco.html">Fale conosco</a>
+                            <Link to="/fale-conosco">Fale conosco</Link>
                         </li>
                     </ul>
                 </nav>
