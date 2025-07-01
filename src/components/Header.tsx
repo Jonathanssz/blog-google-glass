@@ -1,4 +1,3 @@
-import { useState } from 'react'
 
 type Props = {
     link: string;
@@ -6,16 +5,6 @@ type Props = {
 }
 
 function Header(Prop: Props) {
-
-    const padrao: string = "_imagens/glass-oculos-preto-peq.png";
-
-    /* function mudaFoto(foto: string) {
-        if (foto == "padrao") {
-            Prop.link = padrao;
-        } else {
-            document.getElementById("icone").src = "_imagens/" + foto + ".png";
-        }
-    } */
 
     return (
         <>
@@ -27,26 +16,26 @@ function Header(Prop: Props) {
 
                 <img id="icone" src={Prop.link} alt={Prop.desc} />
 
-                {/* <nav id="menu">
+                <nav id="menu">
                     <h1>Menu Principal</h1>
                     <ul>
-                        <li onmouseover="mudaFoto('home')" onmouseout="mudaFoto('padrao')">
+                        <li onMouseOver={mudaFoto('home')} onMouseOut={mudaFoto('padrao')}>
                             <a href="index.html">Home</a>
                         </li>
-                        <li onmouseover="mudaFoto('especificacoes')" onmouseout="mudaFoto('padrao')">
+                        <li onMouseOver={mudaFoto('especificacoes')} onMouseOut={mudaFoto('padrao')}>
                             <a href="specs.html">Especificações</a>
                         </li>
-                        <li onmouseover="mudaFoto('fotos')" onmouseout="mudaFoto('padrao')">
+                        <li onMouseOver={mudaFoto('fotos')} onMouseOut={mudaFoto('padrao')}>
                             <a href="fotos.html">Fotos</a>
                         </li>
-                        <li onmouseover="mudaFoto('multimidia')" onmouseout="mudaFoto('padrao')">
+                        <li onMouseOver={mudaFoto('multimidia')} onMouseOut={mudaFoto('padrao')}>
                             <a href="multimidia.html">Multimídia</a>
                         </li>
-                        <li onmouseover="mudaFoto('contato')" onmouseout="mudaFoto('padrao')">
+                        <li onMouseOver={mudaFoto('contato')} onMouseOut={mudaFoto('padrao')}>
                             <a href="fale-conosco.html">Fale conosco</a>
                         </li>
                     </ul>
-                </nav> */}
+                </nav>
             </header>
         </>
     )

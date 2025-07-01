@@ -1,6 +1,7 @@
-import { useState } from 'react'
 import Head from '../components/Head_title'
-import '../styles/estilo.css'
+import Header from '../components/Header'
+import icone from '../assets/images/glass-oculos-preto-peq.png'
+import '../assets/styles/estilo.css'
 
 function Home() {
   
@@ -8,7 +9,7 @@ function Home() {
     <>
       <Head title="Tudo sobre Google Glass" />
       <div id="interface">
-        
+        <Header link={icone} desc="Google Glass óculos preto pequeno" />
       </div>
     </>
   )
