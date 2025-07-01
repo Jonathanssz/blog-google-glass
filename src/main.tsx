@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './assets/styles/estilo.css'
 import Router from './routes/router.tsx'
+import './assets/styles/estilo.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Router />
-  </StrictMode>,
+  </StrictMode>
 )

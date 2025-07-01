@@ -44,7 +44,7 @@ function Header(Prop: Props) {
                             <Link to="/multimidia">Multimídia</Link>
                         </li>
                         <li onMouseOver={() => mudaFoto(contato)} onMouseOut={() => mudaFoto(Prop.link)}>
-                            <Link to="/fale-conosco">Fale conosco</Link>
+                            <Link to="/contato">Fale conosco</Link>
                         </li>
                     </ul>
                 </nav>
