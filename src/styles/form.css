@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Form styles */
+form {
+    width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+textarea#mensagem {
+    margin-top: 5px;
+    margin-left: 50px;
+    padding: 5px;
+}
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece;
+    padding: 10px;
+    margin: 20px;
+}
+
+fieldset#usuario {
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95% / 120px;
+}
+
+fieldset#genero {
+    width: 150px;
+    margin-left: 50px;
+}
+
+fieldset#endereco {
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95% / 120px;
+}
+
+fieldset#mensagem {
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95% / 120px;
+}
+
+fieldset#carrinho {
+    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95% / 120px;
+}
