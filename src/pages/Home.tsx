@@ -9,7 +9,7 @@ function Home() {
     <>
       <Head title="Tudo sobre Google Glass" />
       <div id="interface">
-        <Header link={icone} desc="Google Glass óculos preto pequeno" />
+        <Header link={icone} />
       </div>
     </>
   )
